@@ -1,0 +1,535 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background-color: #ccc;
+    --light-color: #fff;
+    --dark-color: #333;
+    --primary-color: #ddd;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+body {
+    margin: 3% 4% 0 4%;
+    padding: 0;
+    background-color: var(--background-color);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+}
+nav a {
+    border: 1px solid #ddd;
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+}
+nav a:hover {
+    background-color: var(--dark-color);
+    border: var(--dark-color) 1px solid;
+    color: var(--light-color);
+}
+nav .btn {
+    padding: 20px 154px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--dark-color);
+    font-size: 20px;
+}
+nav .one,
+nav .two,
+nav .three {
+    margin-right: 2%;
+}
+
+/* Main */
+main {
+    margin-top:3%;
+}
+main .main-image {
+    background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-position: center;
+    background-size: cover;
+    box-shadow: var(--shadow);
+    height: 770px;
+    width: 1150px;
+    padding: 5%;
+}
+main .main-image h1 {
+    font-size: 100px;
+    color: var(--light-color);
+    margin-top: 25%;
+}
+main .main-image p {
+    font-size: 40px;
+    color: var(--light-color);
+    padding: 1% 0 3% 0;
+    margin: 2% 0;
+}
+main .main-image .button {
+    text-decoration: none;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 20px 40px;
+    font-size: 25px;
+}
+main .main-image,
+main .main-section {
+    float: left;
+}
+main .main-section {
+    margin-left: 2%;
+}
+main .main-section .main-section-first,
+main .main-section .main-section-second {
+    background-color: var(--primary-color);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+}
+main .main-section .main-section-second {
+    margin-top: 2%;
+}
+main .main-section .main-section-first h4,
+main .main-section .main-section-second h4 {
+    font-size: 30px;
+    margin: 15%;
+    color: var(--dark-color);
+}
+main .main-section .main-section-first p,
+main .main-section .main-section-second p {
+    font-size: 60px;
+    padding: 10px 129px;
+    color: var(--dark-color);
+}
+main .main-section .main-section-first .button,
+main .main-section .main-section-second .button {
+    font-size: 20px;
+    padding: 20px 40px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    margin: 10% 0 3% 0;
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: left;
+}
+
+/* Section */
+section {
+    display: flex;
+    margin-top: 2%;
+}
+section .cards { 
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+section .cards .fa-solid {
+    font-size: 80px;
+    padding: 8% 0;
+    color: var(--dark-color);
+}
+section .cards h4 {
+    font-size: 40px;
+    padding: 1% 0 0 0;
+    color: var(--dark-color);
+}
+section .cards p {
+    font-size: 25px;
+    padding: 5% 10% 0 10%;
+    color: var(--dark-color);
+}
+section .first-card,
+section .second-card,
+section .thrid-card {
+    margin-right: 1%;
+    height: 350px;
+    width: 410px;
+}
+section .fourth-card {
+    width: 420px;
+}
+
+/* Article */
+article {
+    background-color: var(--primary-color);
+    box-shadow: var(--shadow);
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2%;
+    width: 100%;
+}
+article img {
+    width: 880px;
+    padding: 5% 5%;
+}
+article div {
+    margin-top: 11%;
+}
+article div h2 {
+    font-size: 40px;
+    color: var(--dark-color);
+}
+article div p {
+    font-size: 25px;
+    color: var(--dark-color);
+    padding: 5% 5% 3% 0;
+}
+article div .button {
+    font-size: 25px;
+    padding: 10px 30px;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-decoration: none;
+}
+
+/* Section Second */
+.images {
+    display: grid;
+    grid-gap: 45px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+.images img {
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+
+/* Footer */
+footer {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    text-align: center;
+    padding: 2%;
+    margin: 3% 0 2% 0;
+}
+footer p {
+    font-size: 150%;
+}
+
+/* Media for Phone */
+@media screen and (min-width: 0px) and (max-width: 425px) {
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .btn {
+        padding: 15px 70px;
+    }
+    nav .two,
+    nav .three,
+    nav .four {
+        margin: 2% 4% ;
+    }
+    nav .one {
+        margin: 5% 4% 2% 4%;
+    }
+
+    /* Main */
+    main {
+        margin: 5% 4% 0 4%;
+    }
+    main .main-image {
+        height: 550px;
+        width: 357px;
+        padding: 10%;
+    }
+    main .main-image h1 {
+        font-size: 50px;
+        margin-top: 55%;
+    }
+    main .main-image p {
+        font-size: 25px;
+        padding: 1% 2% 5% 0;
+        margin: 2% 0;
+    }
+    main .main-image .button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    main .main-image,
+    main .main-section {
+        float: left;
+    }
+    main .main-section {
+        margin-left: 0;
+        margin-top: 4%;
+    }
+    main .main-section .main-section-first,
+    main .main-section .main-section-second {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    main .main-section .main-section-second {
+        margin-top: 4%;
+    }
+    main .main-section .main-section-first h4,
+    main .main-section .main-section-second h4 {
+        font-size: 20px;
+        margin: 15%;
+    }
+    main .main-section .main-section-first p,
+    main .main-section .main-section-second p {
+        font-size: 40px;
+        padding: 10px 107px;
+    }
+    main .main-section .main-section-first .button,
+    main .main-section .main-section-second .button {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 8% 0 5% 0;
+    }
+
+    /* Section */
+    section {
+        display: flex;
+        flex-direction: column;
+        margin: 4% ;
+    }
+    section .cards .fa-solid {
+        font-size: 70px;
+        padding: 4% 0;
+    }
+    section .cards h4 {
+        font-size: 25px;
+        padding-top: 0;
+    }
+    section .cards p {
+        font-size: 15px;
+        padding: 10% 10%;
+    }
+    section .first-card,
+    section .second-card,
+    section .thrid-card {
+        margin-right: 0;
+        margin: 2% 0;
+        height: 250px;
+        width: 357px;
+    }
+    section .fourth-card {
+        width: 357px;
+        margin: 2% 0;
+    }
+
+    /* Article */
+    article {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 4%;
+        width: 91%;
+    }
+    article img {
+        width: 360px;
+        padding: 15% 15% 5% 15%;
+    }
+    article div {
+        margin-top: 0;
+        padding: 0 15%;
+    }
+    article div h2 {
+        font-size: 25px;
+    }
+    article div p {
+        font-size: 15px;
+        padding: 5% 5% 20% 0;
+    }
+    article div .button {
+        font-size: 15px;
+        padding: 10px 90px;
+        position: relative;
+        top: -13%;
+    }
+    /* Section Second */
+    .images {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    }
+    .images img {
+        width: 99%;
+    }
+    /* Footer */
+    footer {
+        padding: 8%;
+        margin: 15% 4% 10% 4%;
+    }
+    footer p {
+        font-size: 150%;
+    }
+}
+
+/* Media for Tablet */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav .btn {
+        padding: 15px 70px;
+    }
+    nav .two,
+    nav .three,
+    nav .four {
+        margin: 2% 4% ;
+    }
+    nav .one {
+        margin: 5% 4% 2% 4%;
+    }
+
+    /* Main */
+    main {
+        margin: 5% 4% 0 4%;
+    }
+    main .main-image {
+        height: 450px;
+        width: 642px;
+        padding: 10%;
+    }
+    main .main-image h1 {
+        font-size: 50px;
+        margin-top: 15%;
+    }
+    main .main-image p {
+        font-size: 20px;
+        padding: 1% 2% 5% 0;
+        margin: 2% 0;
+    }
+    main .main-image .button {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    main .main-image,
+    main .main-section {
+        float: left;
+    }
+    main .main-section {
+        margin-left: 0;
+        margin-top: 4%;
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main .main-section .main-section-first,
+    main .main-section .main-section-second {
+        align-items: center;
+        justify-items: center;
+    }
+    main .main-section .main-section-second {
+        margin-top: 0;
+    }
+    main .main-section .main-section-first h4,
+    main .main-section .main-section-second h4 {
+        font-size: 20px;
+        margin: 15%;
+    }
+    main .main-section .main-section-first p,
+    main .main-section .main-section-second p {
+        font-size: 40px;
+        padding: 10px 86px;
+    }
+    main .main-section .main-section-first .button,
+    main .main-section .main-section-second .button {
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 8% 0 5% 0;
+    }
+
+    /* Section */
+    section {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    section .cards .fa-solid {
+        font-size: 70px;
+        padding: 4% 0;
+    }
+    section .cards h4 {
+        font-size: 25px;
+        padding-top: 0;
+    }
+    section .cards p {
+        font-size: 20px;
+        padding: 10% 10%;
+    }
+    section .first-card {
+        margin-right: 0;
+        margin: 4% 11%;
+        height: 350px;
+        width: 200px;
+    }
+    section .second-card {
+        margin-left: 5%;
+        margin-top: 4%;
+        height: 350px;
+        width: 200px;
+    }
+    section .thrid-card {
+        margin-right: 0;
+        margin-top: 4%;
+        height: 350px;
+        width: 200px;
+    }
+    section .fourth-card {
+        width: 200px;
+        height: 350px;
+        margin: 2% 11%;
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    /* Article */
+    article {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 4%;
+        width: 91%;
+    }
+    article img {
+        width: 640px;
+        padding: 5% 5% 5% 5%;
+    }
+    article div {
+        margin-top: 0;
+        padding: 0 5%;
+    }
+    article div h2 {
+        font-size: 35px;
+    }
+    article div p {
+        font-size: 20px;
+        padding: 5% 5% 10% 0;
+    }
+    article div .button {
+        font-size: 15px;
+        padding: 10px 250px;
+        position: relative;
+        top: -13%;
+    }
+    /* Section Second */
+    .images {
+        display: grid;
+        grid-gap: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .images img {
+        width: 75%;
+        margin-left: 11%;
+        margin-top: 5%;
+    }
+    /* Footer */
+    footer {
+        padding: 5%;
+        margin: 8% 4% 5% 4%;
+    }
+    footer p {
+        font-size: 150%;
+    }
