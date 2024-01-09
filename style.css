@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia:wght@300&family=Open+Sans:wght@300&family=Work+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia:wght@300&family=Open+Sans:wght@300&family=Work+Sans&display=swap');
 
 * {
     margin: 0;
@@ -55,17 +55,17 @@ main .main-image {
     background-position: center;
     background-size: cover;
     box-shadow: var(--shadow);
-    height: 770px;
+    height: 840px;
     width: 1100px;
     padding: 5%;
 }
 main .main-image h1 {
-    font-size: 100px;
+    font-size: 80px;
     color: var(--light-color);
     margin-top: 25%;
 }
 main .main-image p {
-    font-size: 40px;
+    font-size: 30px;
     color: var(--light-color);
     padding: 1% 0 3% 0;
     margin: 2% 0;
@@ -143,7 +143,7 @@ section .cards h4 {
     color: var(--dark-color);
 }
 section .cards p {
-    font-size: 25px;
+    font-size: 20px;
     padding: 5% 10% 0 10%;
     color: var(--dark-color);
 }
@@ -155,7 +155,7 @@ section .thrid-card {
     width: 400px;
 }
 section .fourth-card {
-    width: 390px;
+    width: 400px;
     height: 400px;
 }
 
@@ -167,7 +167,7 @@ article {
     grid-gap: 10px;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 2%;
-    width: 100%;
+    width: 98.4%;
 }
 article img {
     width: 880px;
@@ -181,7 +181,7 @@ article div h2 {
     color: var(--dark-color);
 }
 article div p {
-    font-size: 25px;
+    font-size: 20px;
     color: var(--dark-color);
     padding: 5% 5% 3% 0;
 }
@@ -196,11 +196,11 @@ article div .button {
 /* Section Second */
 .images {
     display: grid;
-    grid-gap: 45px;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .images img {
-    width: 100%;
+    width: 92%;
     box-shadow: var(--shadow);
 }
 
@@ -209,7 +209,7 @@ footer {
     color: var(--light-color);
     background-color: var(--dark-color);
     text-align: center;
-    padding: 2%;
+    padding: 3%;
     margin: 3% 0 2% 0;
 }
 footer p {
@@ -370,7 +370,7 @@ footer p {
 }
 
 /* Media for Tablet */
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 767px) {
     /* Navigation */
     nav {
         display: flex;
@@ -537,3 +537,4 @@ footer p {
     footer p {
         font-size: 150%;
     }
+}
