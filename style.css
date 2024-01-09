@@ -151,11 +151,11 @@ section .first-card,
 section .second-card,
 section .thrid-card {
     margin-right: 1%;
-    height: 350px;
-    width: 410px;
+    height: 400px;
+    width: 400px;
 }
 section .fourth-card {
-    width: 420px;
+    width: 390px;
 }
 
 /* Article */
