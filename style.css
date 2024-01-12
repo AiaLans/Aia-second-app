@@ -282,7 +282,7 @@ footer p {
     main .main-section .main-section-first p,
     main .main-section .main-section-second p {
         font-size: 40px;
-        padding: 10px 107px;
+        padding: 10px 91px;
     }
     main .main-section .main-section-first .button,
     main .main-section .main-section-second .button {
@@ -319,6 +319,7 @@ footer p {
     }
     section .fourth-card {
         width: 357px;
+        height: 250px;
         margin: 2% 0;
     }
 
@@ -345,7 +346,7 @@ footer p {
         padding: 5% 5% 20% 0;
     }
     article div .button {
-        font-size: 15px;
+        font-size: 13px;
         padding: 10px 90px;
         position: relative;
         top: -13%;
